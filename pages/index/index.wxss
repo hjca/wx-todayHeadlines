@@ -1,0 +1,69 @@
+.todayIndex{
+  background: #fff;
+}
+.indexSearch{
+  height: auto;
+  background-color: #d43d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+.indexSearch image{
+  width: 200rpx;
+  height: 50rpx;
+}
+.indexSearchInput{
+  flex: 1;
+  height: auto;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+.indexNavbar{
+  width: 100%;
+  height: 100rpx;
+  background: #f4f5f6;
+  position: fixed;
+  left: 0;
+  top: 110rpx;
+  
+}
+.indexNavbar .additem{
+  width: 100rpx;
+  height: 100%;
+  background: #f4f5f6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.additem image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.menuList{
+  width: 650rpx;
+  height: 100%;
+  white-space: nowrap;
+}
+.normal,.selectItem{
+  height: 100%;
+  width: 120rpx;
+  font-size: 35rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 100rpx;
+}
+.normal{
+  color: #505050;
+}
+.selectItem{
+  color: #d43d3d;
+  font-weight: bold;
+}

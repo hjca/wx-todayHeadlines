@@ -1,0 +1,37 @@
+<view class="todayIndex">
+
+  <!-- 头部搜索区域 -->
+  <view class='indexSearch'>
+    <!-- logo图标 -->
+    <image src='../../static/images/logo.png'></image>
+    <!-- 搜索框 -->
+    <view class='indexSearchInput'>
+      <inputSearch catch:startSearch='startSearch'></inputSearch>
+    </view>
+  </view>
+
+  <!-- 菜单区域 -->
+  <view class='indexNavbar'>
+    <!-- 加号区域 -->
+    <view class='additem'>
+      <image src='../../static/images/addMenus.png'></image>
+    </view>
+
+    <!-- 菜单内容区域 -->
+    <scroll-view  class='menuList' scroll-x="{{ scrollX }}">
+      <view class="{{ flag == menuIndex ?  'selectItem' : 'normal' }}" 
+        wx:for="{{ menuListData }}"
+        wx:key='unique'
+        wx:for-index="menuIndex" 
+        wx:for-item="menuItem"
+        data-menuId='{{ menuItem.menuId }}'
+        data-menIndex='{{ menuIndex }}'
+        catchtap='selectMenu'
+        >{{ menuItem.menuName }}</view>
+    </scroll-view>
+  </view>
+
+  <!-- 主题内容区域 -->
+  <!-- <view class='indexNewsContents'></view> -->
+
+</view>

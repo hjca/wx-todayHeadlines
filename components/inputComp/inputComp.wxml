@@ -1,0 +1,11 @@
+<view class="wx-input">
+  <image src='../../static/images/search.png'></image>
+  <input 
+    value='{{ searchVal }}'
+    type='text' 
+    placeholder='输你想要的'
+    confirm-type='search'
+    class='wx-input-search'
+    bindconfirm='_searchSart'
+    ></input>
+</view>
