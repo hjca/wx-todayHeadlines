@@ -1,0 +1,18 @@
+<view class="recommendNews">
+  <!-- 样式一 -->
+  <view class='templateFirst' catchtap='seeDetail'>
+    <text class='bigText'>90秒告诉你：习近平的“只争朝夕”</text>
+    <view class='smallText'>
+      <text class='text1'>置顶</text>
+      <text class='text2'>新华社 评论2 22分钟前</text>
+    </view>
+  </view>
+  <!-- 样式二 -->
+  <view class='templateSecound'>
+    <text class='bigText'>90秒告诉你：习近平的“只争朝夕”</text>
+    <view class='smallText'>
+      <text class='text1'>热</text>
+      <text class='text2'>新华社 评论2 22分钟前</text>
+    </view>
+  </view>
+</view>

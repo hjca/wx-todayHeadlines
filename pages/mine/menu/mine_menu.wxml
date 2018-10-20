@@ -1,0 +1,22 @@
+<!-- 我的页面里的菜单 -->
+<template name="mineMenu">
+  <view class='mine_menu'>
+    <!-- 收藏 -->
+    <view class='mine_collection' catchtap='watchDetail'>
+      <image src='../../static/images/collection.png'></image>
+      <text>收藏</text>
+    </view>
+
+    <!-- 历史 -->
+    <view class='mine_collection'>
+      <image src='../../static/images/history.png'></image>
+      <text>历史</text>
+    </view>
+
+    <!-- 夜间 -->
+    <view class='mine_collection'>
+      <image src='../../static/images/night.png'></image>
+      <text>夜间</text>
+    </view>
+  </view>
+</template>

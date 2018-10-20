@@ -11,6 +11,7 @@
   position: fixed;
   top: 0;
   left:0;
+  z-index: 100;
 }
 .indexSearch image{
   width: 200rpx;
@@ -29,7 +30,7 @@
   position: fixed;
   left: 0;
   top: 110rpx;
-  
+  z-index: 100;
 }
 .indexNavbar .additem{
   width: 100rpx;
@@ -66,4 +67,43 @@
 .selectItem{
   color: #d43d3d;
   font-weight: bold;
+}
+.indexNewsContent{
+  width: 100%;
+  height: 1390rpx;
+  /* background: #505050; */
+  padding-top: 210rpx;
+}
+.recommendNews{
+  padding: 0 30rpx;
+}
+.templateFirst,.templateSecound{
+  height: auto;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+  padding: 30rpx 0;
+}
+.bigText{
+  font-size: 40rpx;
+  line-height: 84rpx;
+  color: #222;
+}
+.smallText{
+  height: auto;
+}
+.smallText .text1{
+  display: inline-block;
+  width: auto;
+  height: 35rpx;
+  line-height: 35rpx;
+  font-size: 20rpx;
+  color: #f85959;
+  border: 1px solid rgba(248, 89, 89, 0.5);
+  border-radius: 8rpx;
+  text-align: center;
+  padding: 0 4rpx;
+}
+.smallText .text2{
+  font-size: 20rpx;
+  color: #999;
+  margin-left: 15rpx;
 }

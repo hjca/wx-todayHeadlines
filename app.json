@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/systemSet/systemSet"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,14 +13,14 @@
   },
   "tabBar": {
     "color": "#333333",
-    "selectedColor":"#d43d3d",
-    "backgroundColor":"#ffffff",
-    "list":[
+    "selectedColor": "#d43d3d",
+    "backgroundColor": "#ffffff",
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "text":"首页",
-        "iconPath":"static/images/defaultIndex.png",
-        "selectedIconPath":"static/images/selectIndex.png"
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/defaultIndex.png",
+        "selectedIconPath": "static/images/selectIndex.png"
       },
       {
         "pagePath": "pages/mine/mine",

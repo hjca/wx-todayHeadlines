@@ -1,0 +1,35 @@
+<view class="todaySet">
+  <view class='area'>
+    <van-cell-group>
+      <van-cell title="编辑资料" is-link />
+      <van-cell title="账号和绑定设置" is-link />
+      <van-cell title="黑名单" is-link />
+    </van-cell-group>
+  </view>
+
+  <view class='area'>
+    <van-cell-group>
+      <van-cell title="清除缓存" value="12.95MB" />
+      <van-cell title="字体大小" value="中"/>
+      <van-switch-cell
+          title="列表显示摘要"
+          checked="{{ checked }}"
+          bind:change="onChange"
+        />
+      <van-cell title="非WIFI网络流量" value="最佳效果(下载大图)"/>
+      <van-cell title="非WIFI网络播放提醒" value="提醒一次"/>
+      <van-switch-cell
+          title="推送通知"
+          checked="{{ messageChecked }}"
+          bind:change="messageChange"
+        />
+    </van-cell-group>
+  </view>
+
+  <view class='area'>
+    <van-cell-group>
+      <van-cell title="离线下载" is-link />
+      <van-cell title="检查版本" value="6.0.0" />
+    </van-cell-group>
+  </view>
+</view>

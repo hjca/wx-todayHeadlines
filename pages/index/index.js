@@ -8,7 +8,8 @@ Page({
   data: {
     menuListData:'',
     scrollX:true,
-    flag:0
+    flag:0,
+    contentList:[]
   },
 
   /**
@@ -22,7 +23,15 @@ Page({
       that.setData({
         menuListData:result.data.data.list
       });
-    })
+    },null,null,2)
+
+    // 获取首页内容
+    API.eoLinkerAjax('/index/content', function (result) {
+      wx.hideLoading();
+      that.setData({
+        contentList:result.data.data.list
+      })
+    }, { "menuId": that.data.flag}, null, 2)
   },
 
   /**
@@ -84,6 +93,16 @@ Page({
     let index = evt.currentTarget.dataset.menindex;
     this.setData({
       flag:index
+    })
+  },
+  changeTable(event){
+    this.setData({
+      flag:event.detail.current
+    })
+  },
+  seeDetail() {
+    wx.navigateTo({
+      url: '../detail/detail',
     })
   }
 })

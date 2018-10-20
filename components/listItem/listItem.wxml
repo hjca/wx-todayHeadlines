@@ -1,0 +1,10 @@
+<!-- 列表item -->
+<view
+ class="{{ bottomLine ? 'mine_list_item bottomLine' : 'mine_list_item' }}"
+ catchtap='_pageJump'>
+  <text class='mine_list_item_left'>{{ leftTitle }}</text>
+  <view class='mine_list_item_right'>
+    <text wx:if='{{ rightPrice }}'>{{ rightPrice }}</text>
+    <image src='../../static/images/rightrow.png'></image>
+  </view>
+</view>

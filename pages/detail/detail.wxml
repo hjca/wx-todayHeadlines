@@ -1,0 +1,23 @@
+<!-- 详情页 -->
+<view class='newsDetail'>
+  <view class='detailHead'>
+    习近平就朝鲜国庆70周年向朝鲜最高领导人金正恩致贺电
+  </view>
+
+  <view class='newsSource'>
+    <view class='sourceLeft'>
+      <image src='https://p3.pstatp.com/thumb/9519/925052030'></image>
+      <view class='sourceInfo'>
+        <view class='sourceTitle'>新华网</view>
+        <text>12小时前·新华网官方头条号</text>
+      </view>
+    </view>
+
+    <view class='sourceRight' wx:if="{{ isGZ }}" catchtap='changeStatus'>关注</view>
+    <view class='sourceRight2' wx:else catchtap='changeStatus'>已关注</view>
+  </view>
+
+  <view class='footer'>
+    <footerDetail></footerDetail>
+  </view>
+</view>

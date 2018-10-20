@@ -1,0 +1,25 @@
+/* components/listItem/listItem.wxss */
+.mine_list_item{
+  height: 100rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.mine_list_item_right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mine_list_item_left,.mine_list_item_right text{
+  font-size: 30rpx;
+  color: #333
+}
+.mine_list_item_right image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.bottomLine{
+  border: 2rpx solid #f4f4f4;
+}

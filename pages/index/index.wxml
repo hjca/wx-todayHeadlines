@@ -32,6 +32,18 @@
   </view>
 
   <!-- 主题内容区域 -->
-  <!-- <view class='indexNewsContents'></view> -->
+  <swiper current="{{ flag }}" class='indexNewsContent' bindchange="changeTable">
+      <swiper-item 
+        wx:for="{{contentList  }}"
+        wx:key="unique"
+        wx:for-item="contentItem"
+        wx:for-index="indexs"
+        >
+        <view wx:if="{{ indexs != 0 }}">{{ contentItem.content }}</view>
+        <view wx:else="{{ indexs == 0 }}">
+          <include src='recommend/recommend.wxml'/>
+        </view>
+      </swiper-item>
+  </swiper>
 
 </view>

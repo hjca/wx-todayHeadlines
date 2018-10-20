@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "footerDetail": "/components/detailFooter/detailFooter"
+  }
+}

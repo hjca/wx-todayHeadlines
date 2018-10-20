@@ -1,0 +1,5 @@
+<!-- 底部菜单 -->
+<view class='detail_footer'>
+  <input placeholder='写评论...'></input>
+  
+</view>

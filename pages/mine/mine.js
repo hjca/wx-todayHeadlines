@@ -1,18 +1,36 @@
-// pages/mine/mine.js
+var API = require('../../utils/util.js');
+let app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    userInfo:{
+      "nickName":'',
+      "avatarUrl":''
+    },
+    userDetail:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let that = this;
+    // 获取用户信息
+    app.getUserInfo((userInfo) => {
+     this.setData({
+       userInfo:userInfo
+     })
+    });
+    // 获取用户的关注量，粉丝量，访客量
+    API.eoLinkerAjax('/userInfoMessage', function (result) {
+      wx.hideLoading();
+      that.setData({
+        userDetail:result.data.data
+      })
+    }, null, null, 2)
   },
 
   /**
@@ -62,5 +80,13 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  watchDetail:() => {
+    console.log("收藏")
+  },
+  _pageJump:() => {
+    wx.navigateTo({
+      url: "/pages/systemSet/systemSet"
+    })
   }
 })

@@ -1,2 +1,57 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!-- 我的 -->
+<view class='newsMine'>
+  <view class='userDetailInfo'>
+    <view class='userHeaderName'>
+      <image src='{{ userInfo.avatarUrl }}'></image>
+
+      <text>{{ userInfo.nickName }}</text>
+    </view>
+    <view class='historyStyle'>
+      <view class='guanzhu'>
+        <text>{{ userDetail.attentionNum }}</text>
+        <text>关注</text>
+      </view>
+
+      <text class='line'></text>
+
+      <view class='fans'>
+        <text>{{ userDetail.fansNum }}</text>
+        <text>粉丝</text>
+      </view>
+
+      <text class='line'></text>
+
+       <view class='visitors'>
+        <text>{{ userDetail.visitorsNum }}</text>
+        <text>7天访客</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 菜单 -->
+  <import src="menu/mine_menu.wxml"/>
+  <template is="mineMenu"/>
+
+  <!-- 消息通知 -->
+  <view class='infoNotice'>
+    <listitem leftTitle='消息通知'></listitem>
+  </view>
+
+  <!-- 头条商城、京东特供 -->
+  <view class='mineShop'>
+    <listitem
+      bottomLine='true'
+      leftTitle='消息通知'
+      rightPrice='点击速领200元红包'
+      ></listitem>
+
+      <listitem leftTitle='京东特供'></listitem>
+  </view>
+
+  <!-- 我要爆料、问题反馈、系统设置 -->
+  <view class='systemSet'>
+    <listitem leftTitle='我要爆料' bottomLine='true'></listitem>
+    <listitem leftTitle='问题反馈' bottomLine='true'></listitem>
+    <listitem leftTitle='系统设置' bind:pageJump="_pageJump"></listitem>
+  </view>
+</view>

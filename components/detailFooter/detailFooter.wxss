@@ -1,0 +1,17 @@
+.detail_footer{
+  height: 50px;
+  background: rgb(241, 239, 239);
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.detail_footer input{
+  width: 280rpx;
+  height: 60rpx;
+  background: #fff;
+  border: 1px solid #333;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  border-radius: 30rpx;
+}
